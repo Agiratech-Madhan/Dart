@@ -162,8 +162,45 @@ void main(List<String> args) {
   // final removedValue = terrestrial.remove(2); // Venus
   // print(terrestrial); // {1: Mercury, 3: Earth}
 
-/** */
+/** 
   final terrestrial = <int, String>{1: 'Mercury', 2: 'Venus', 3: 'Earth'};
   terrestrial.removeWhere((key, value) => value.startsWith('E'));
   print(terrestrial); // {1: Mercury, 2: Venus}
+*/
+// ---------------------------------------
+//   final planetsFromSun = <int, String>{1: 'Mercury', 2: 'unknown', 3: 'Earth'};
+// // Update value for known key value 2.
+//   planetsFromSun.update(2, (value) => 'Venus');
+//   print(planetsFromSun); // {1: Mercury, 2: Venus, 3: Earth}
+
+//   final largestPlanets = <int, String>{1: 'Jupiter', 2: 'Saturn', 3: 'Neptune'};
+// // Key value 8 is missing from list, add it using [ifAbsent].
+//   largestPlanets.update(2, (value) => 'New', ifAbsent: () => 'Mercury');
+//   print(largestPlanets);
+//   largestPlanets.update(8, (value) => 'New', ifAbsent: () => 'Mercury');
+
+//   print(largestPlanets); // {1: Jupiter, 2: Saturn, 3: Neptune, 8: Mercury}
+// ----------------------
+  // Map<String, dynamic> map1 = {
+  //   'key1': 'Kindacode.com',
+  //   'key2': 'Blue',
+  //   'key3': 'Green',
+  //   'key4': 'Orange'
+  // };
+
+  // map1.update('key3', (value) => 'Transparent');
+  // map1.update('key4', (value) => 'Something New');
+  // print(map1);
+
+// -----------------------
+// -----------------------
+  // final terrestrial = <int, String>{1: 'Mercury', 2: 'Venus', 3: 'Earth'};
+  // terrestrial.updateAll((key, value) => value.toUpperCase());
+  // print(terrestrial); // {1: MERCURY, 2: VENUS, 3: EARTH}
+
+  // --------------------
+  Map<String, dynamic> map2 = {'key1': 1, 'key2': 3, 'key3': 9, 'key4': 18};
+
+  map2.updateAll((key, value) => value * value);
+  print(map2);
 }
