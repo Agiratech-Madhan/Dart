@@ -18,17 +18,17 @@ Input 2:
 import 'dart:io';
 
 void main(List<String> args) {
-  List<int> sam = [];
+  // List<int> sam = [];
   String? x = stdin.readLineSync();
   int number = int.parse(x!);
 
   for (int n = 2; n <= number; n++) {
     if (isPrime(n)) {
-      // print(n);
-      sam.add(n);
+      print(n);
+      // sam.add(n);
     }
   }
-  print(sam.length);
+  // print(sam.length);
 }
 
 bool isPrime(int num) {

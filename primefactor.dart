@@ -40,13 +40,18 @@ Output 2:
 import 'dart:io';
 
 void main(List<String> args) {
-  String? input = stdin.readLineSync();
-  num? x = num.parse(input!);
-  print(1);
-  for (int i = 2; i <= x; i++) {
+  // String? input = stdin.readLineSync();
+  // num? x = num.parse(input!);
+  num? x = int.parse(stdin.readLineSync()!);
+  // int count = 0;
+  List<int> output = [];
+  // print(1);
+  for (int i = 1; i <= x; i++) {
     if (x % i == 0)
-      print(i);
+      output.add(i);
+    // count++;
     else
       continue;
   }
+  print(output.length);
 }

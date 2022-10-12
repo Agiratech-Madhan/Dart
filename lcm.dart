@@ -17,9 +17,14 @@ Output 2:
 
 a*b/gcd
 */
+import 'dart:io';
+
 void main(List<String> args) {
-  int x = 6;
-  int y = 17;
+  String? input1 = stdin.readLineSync();
+  String? input2 = stdin.readLineSync();
+
+  int x = int.parse(input1!);
+  int y = int.parse(input2!);
   num? z;
   for (int i = 1; i <= x && i <= y; i++) {
     if (x % i == 0 && y % i == 0) {
