@@ -18,7 +18,6 @@ Input 2:
 import 'dart:io';
 
 void main(List<String> args) {
-  // List<int> sam = [];
   String? x = stdin.readLineSync();
   int number = int.parse(x!);
 
