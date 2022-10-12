@@ -135,6 +135,8 @@ void main(List<String> args) {
   // dynamic object = 1;
   // object.add(42); // throws
   */
+  // final<dynamic?,dynamic?> x={"x":"23"};
+
 /** 
   final diameters = <num, String>{1.0: 'Earth'};
   final otherDiameters = <double, String>{0.383: 'Mercury', 0.949: 'Venus'};

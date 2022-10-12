@@ -7,8 +7,11 @@ void main(List<String> args) {
   int x = int.parse(num!);
   int i = 1;
 
-  while (i <= x) {
+  // while (i <= x) {
+  //   print(i);
+  //   i++;
+  // }
+  for (; i <= x; i++) {
     print(i);
-    i++;
   }
 }

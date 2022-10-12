@@ -5,8 +5,11 @@ void main(List<String> args) {
   // int? num3 = stdin.readIntSync();
   int x = int.parse(num!);
   int i = 1;
-  while (x >= i) {
+  // while (x >= i) {
+  //   print(x);
+  //   x--;
+  // }
+  for (i; i <= x; x--) {
     print(x);
-    x--;
   }
 }

@@ -12,16 +12,22 @@ import 'dart:io';
 
 void main() {
   String? x = stdin.readLineSync();
-  int y = int.parse(x!);
-  int i = 1;
+  int? y = int.parse(x!);
+  // int i = 1;
   // bool con = (i <= y);
-  while (i <= y) {
-    if (i % 2 != 0) {
+  // while (i <= y) {
+  // if (i % 2 != 0) {
+  //   print(i);
+  //   i++;
+  // } else {
+  //   i++;
+  //   continue;
+  // }
+  // }
+  for (int i = 0; i < y; i++) {
+    if (i % 2 != 0)
       print(i);
-      i++;
-    } else {
-      i++;
+    else
       continue;
-    }
   }
 }
