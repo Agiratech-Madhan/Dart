@@ -72,3 +72,37 @@ void main() {
 //      c.add(b[1]);
 //      c.add(b[2]);
    print(c); */
+   /**void main() {
+  
+  List A=[1,2,3,4,5];
+  int l=2;
+ int r=l%A.length;
+  
+//   List b = A.sublist(0, r);
+//   print('b$b');
+//   List c = A.sublist(r, A.length);
+//   print('c$c');  
+//   for (int i = 0; i < b.length; i++) {
+//     c.add(b[i]);
+//   }
+//   print(c);
+// List 
+  List X=[];
+  List Y=[];
+  for (int y=0;y<r;y++){
+    X.add(A[y]);
+  }
+  for (int z=r;z<A.length;z++){
+    Y.add(A[z]);
+  } 
+//   print(X);
+//   print(Y);
+  for(int z=0;z<X.length;z++){
+    Y.add(X[z]);
+  }
+  print(Y);
+ 
+//  int k=6;
+//   num x=r%(A.length);
+//   print(x);
+} */
